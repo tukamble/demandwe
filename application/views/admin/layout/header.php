@@ -214,12 +214,12 @@
                                                                 </a>
                                                                 <ul>
                                                                         <li>
-                                                                                <a href="admin_posts.html">
+                                                                            <a href="<?php echo site_url("admin/Event");?>">
                                                 Posts
                                         </a>
                                                                         </li>
                                                                         <li>
-                                                                            <a href="<?php echo site_url('admin/Event');?>">
+                                                                            <a href="<?php echo site_url('admin/Event/upload');?>">
                                                 Single Post
                                         </a>
                                                                         </li>
@@ -241,8 +241,7 @@
                                                             <a href="admin_order.html">
                                                             Single Order
                                                             </a>
-                                                        </li>
-                                                    </ul>
+                                                        </li>                 </ul>
                                                 </li>
            
                                                 <li>
@@ -577,28 +576,3 @@
                                 </div>
                                 <!-- eof .header_right_buttons -->
                             </header>
-                            <section class="ls with_bottom_border">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <ol class="breadcrumb darklinks">
-                                                <li>
-                                                    <a href="#">Homepage</a>
-                                                </li>
-                                                <li class="active">Dashboard</li>
-                                            </ol>
-                                        </div>
-                                        <!-- .col-* -->
-                                        <div class="col-md-6 text-md-right">
-                                            <span class="dashboard-daterangepicker">
-                                            <i class="fa fa-calendar"></i>
-                                            <span></span>
-                                            <i class="caret"></i>
-                                            </span>
-                                        </div>
-                                        <!-- .col-* -->
-                                    </div>
-                                    <!-- .row -->
-                                </div>
-                                <!-- .container -->
-                            </section>

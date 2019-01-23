@@ -6,6 +6,7 @@ class Welcome extends CI_Controller
     {
         parent::__construct();
         $this->load->model('SuperUser');
+        $this->load->model("admin/Event_data");
     }
     public function index()
     {
@@ -24,7 +25,8 @@ class Welcome extends CI_Controller
     
     public function program() 
     {
-        $this->load->view('site/program');
+        $data['images'] = $this->Event_data->getProgramimage();
+        $this->load->view('site/program',$data);
     }
     
     public function events() 
@@ -39,12 +41,14 @@ class Welcome extends CI_Controller
     
     public function gallery() 
     {
-        $this->load->view('site/gallery');
+        $data['images'] = $this->Event_data->getGalleryimage();
+        $this->load->view('site/gallery',$data);
     }
     
     public function blog() 
     {
-        $this->load->view('site/blog');
+        $data['images'] = $this->Event_data->getBlogimage();
+        $this->load->view('site/blog',$data);
     }
     public function faq(){
         $this->load->view('site/faq');

@@ -29,7 +29,7 @@ class Upload_images extends CI_Controller{
                 {
                     $this->form_validation->set_error_delimiters('<p class="error">', '</p>');
                     $error = array('error' => $this->upload->display_errors());
-                    $this->load->view('admin/upload', $error);
+                    $this->load->view('admin/AddEventimage', $error);
                 }else{
                     $post = $this->input->post();
                     $data = $this->upload->data();
